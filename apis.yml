@@ -1,8 +1,24 @@
 aid: mindset
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/mindset.png
 name: Mindset
-description: Mindset is a company surfaced as a portfolio company of union-square-ventures and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: Mindset is a mobile self-care and wellness application by DIVE Studios that pairs audio
+  content from celebrity artists and musicians with expert-led mental health resources. Features
+  include Celebrity Mindsets audio collections, a five-minute Daily Check-In routine, Daily Reflections
+  community sharing, licensed-professional advice, and daily quotes, delivered on iOS and Android with
+  a 50,000+ member Discord community. Mindset operates a private, login-gated mobile backend at
+  api.getmindset.com behind Google OAuth; no public developer API, documentation, SDKs, or well-known
+  discovery surface is published.
 url: https://raw.githubusercontent.com/api-evangelist/mindset/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,9 +28,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Wellness
+- Mental Health
+- Self-Care
+- Audio
+- Consumer
+- Mobile App
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +44,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/mindset-domain-security.yml
 - type: Website
   url: https://www.getmindset.com
+- type: PrivacyPolicy
+  url: https://api.getmindset.com/pages/privacy.html
+- type: Support
+  url: https://mindsetdive.zendesk.com/hc/en-us/requests/new
+- type: Login
+  url: https://api.getmindset.com/login
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
